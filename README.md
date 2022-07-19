@@ -434,6 +434,7 @@ alex@/tmp/sort$
 ## AUTHORS: 
 
 |Nom |Prenoms|Fonction|
---------------
+|----|-------|---------|
 |***Diabakate***|***Ikary Ryann Kouadio KAMORY***| |
 |***Yeo***|***Pevrogui Noel***| |
+---------------------------------
