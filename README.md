@@ -46,8 +46,9 @@ There should be one project repository per group. If you clone/fork/whatever a p
 More Info
 Data Structure and Functions
 For this project you are given the following print_array, and print_list functions:
-# #include <stdlib.h>
-# #include <stdio.h>
+``` 
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_array - Prints an array of integers
@@ -68,9 +69,12 @@ void print_array(const int *array, size_t size)
         ++i;
     }
     printf("\n");
-}
-# #include <stdio.h>
-# #include "sort.h"
+} 
+```
+
+``` 
+ #include <stdio.h>
+ #include "sort.h"
 
 /**
  * print_list - Prints a list of integers
@@ -92,6 +96,7 @@ void print_list(const listint_t *list)
     }
     printf("\n");
 }
+```
 Our files print_array.c and print_list.c (containing the print_array and print_list functions) will be compiled with your functions during the correction.
 Please declare the prototype of the functions print_array and print_list in your sort.h header file
 Please use the following data structure for doubly linked list:
