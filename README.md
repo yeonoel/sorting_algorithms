@@ -100,6 +100,7 @@ void print_list(const listint_t *list)
 Our files print_array.c and print_list.c (containing the print_array and print_list functions) will be compiled with your functions during the correction.
 Please declare the prototype of the functions print_array and print_list in your sort.h header file
 Please use the following data structure for doubly linked list:
+```
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -113,15 +114,16 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
+```
 Please, note this format is used for Quiz and Task questions.
 
-O(1)
-O(n)
-O(n!)
-n square -> O(n^2)
-log(n) -> O(log(n))
-n * log(n) -> O(nlog(n))
-n + k -> O(n+k)
+* O(1)
+* O(n)
+* O(n!)
+* n square -> O(n^2)
+* log(n) -> O(log(n))
+* n * log(n) -> O(nlog(n))
+* n + k -> O(n+k)
 …
 Please use the “short” notation (don’t use constants). Example: O(nk) or O(wn) should be written O(n). If an answer is required within a file, all your answers files must have a newline at the end.
 
@@ -146,9 +148,10 @@ in the best case
 in the average case
 in the worst case
 alex@/tmp/sort$ cat 0-main.c 
-# #include <stdio.h>
-# #include <stdlib.h>
-# #include "sort.h"
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include "sort.h"
 
 /**
  * main - Entry point
@@ -167,6 +170,8 @@ int main(void)
     print_array(array, n);
     return (0);
 }
+```
+```
 alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_array.c -o bubble
 alex@/tmp/sort$ ./bubble
 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
@@ -195,10 +200,11 @@ alex@/tmp/sort$ ./bubble
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$ 
+```
 Repo:
 
-GitHub repository: sorting_algorithms
-File: 0-bubble_sort.c, 0-O
+* GitHub repository: sorting_algorithms
+* File: 0-bubble_sort.c, 0-O
   
 1. Insertion sort
 mandatory
@@ -215,10 +221,11 @@ Write in the file 1-O, the big O notations of the time complexity of the Inserti
 in the best case
 in the average case
 in the worst case
+```
 alex@/tmp/sort$ cat 1-main.c
-# #include <stdio.h>
-# #include <stdlib.h>
-# #include "sort.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "sort.h"
 
 /**
  * create_listint - Creates a doubly linked list from an array of integers
@@ -272,6 +279,8 @@ int main(void)
     print_list(list);
     return (0);
 }
+```
+```
 alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 1-main.c 1-insertion_sort_list.c print_list.c -o insertion
 alex@/tmp/sort$ ./insertion
 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
@@ -300,10 +309,11 @@ alex@/tmp/sort$ ./insertion
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+```
 Repo:
 
-GitHub repository: sorting_algorithms
-File: 1-insertion_sort_list.c, 1-O
+* GitHub repository: sorting_algorithms
+* File: 1-insertion_sort_list.c, 1-O
   
 2. Selection sort
 mandatory
@@ -319,6 +329,7 @@ Write in the file 2-O, the big O notations of the time complexity of the Selecti
 in the best case
 in the average case
 in the worst case
+```
 alex@/tmp/sort$ cat 2-main.c
 # #include <stdio.h>
 # #include <stdlib.h>
@@ -341,6 +352,8 @@ int main(void)
     print_array(array, n);
     return (0);
 }
+```
+```
 alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 
 2-main.c 2-selection_sort.c print_array.c -o select
 alex@/tmp/sort$ ./select
@@ -356,10 +369,11 @@ alex@/tmp/sort$ ./select
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+```
 Repo:
 
-GitHub repository: sorting_algorithms
-File: 2-selection_sort.c, 2-O
+* GitHub repository: sorting_algorithms
+* File: 2-selection_sort.c, 2-O
   
 3. Quick sort
 mandatory
@@ -377,6 +391,7 @@ Write in the file 3-O, the big O notations of the time complexity of the Quick s
 in the best case
 in the average case
 in the worst case
+```
 alex@/tmp/sort$ cat 3-main.c
 # #include <stdio.h>
 # #include <stdlib.h>
@@ -399,6 +414,8 @@ int main(void)
     print_array(array, n);
     return (0);
 }
+```
+```
 alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 3-main.c 3-quick_sort.c print_array.c -o quick
 alex@/tmp/sort$ ./quick
 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
@@ -413,7 +430,7 @@ alex@/tmp/sort$ ./quick
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
-
+```
 ## AUTHORS:  
-** Ikary Ryann Kouadio KAMORY Diabakate** 
+**Ikary Ryann Kouadio KAMORY Diabakate** 
 **Yeo Pevrogui Noel**
