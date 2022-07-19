@@ -431,6 +431,9 @@ alex@/tmp/sort$ ./quick
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
 ```
-## AUTHORS:  
-**Ikary Ryann Kouadio KAMORY Diabakate** 
-**Yeo Pevrogui Noel**
+## AUTHORS: 
+
+|Nom |Prenoms|Fonction|
+--------------
+|***Diabakate***|***Ikary Ryann Kouadio KAMORY***| |
+|***Yeo***|***Pevrogui Noel***| |
